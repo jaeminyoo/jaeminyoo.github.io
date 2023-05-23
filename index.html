@@ -17,25 +17,25 @@
             text-decoration: none;
         }
 
-        ol {
-            counter-reset: my-custom-counter 28;
-            list-style: none;
-        }
+        /*ol {*/
+        /*    counter-reset: my-custom-counter 28;*/
+        /*    list-style: none;*/
+        /*}*/
 
-        ol > li {
-            counter-increment: my-custom-counter -1;
-            list-style: none;
-            position: relative;
-            padding-left: 18pt;
-            margin-bottom: 10pt;
-        }
+        /*ol > li {*/
+        /*    counter-increment: my-custom-counter -1;*/
+        /*    list-style: none;*/
+        /*    position: relative;*/
+        /*    padding-left: 18pt;*/
+        /*    margin-bottom: 10pt;*/
+        /*}*/
 
-        ol > li:before {
-            counter-increment: list;
-            content: "[" counter(my-custom-counter) "]";
-            position: absolute;
-            left: -1.4em;
-        }
+        /*ol > li:before {*/
+        /*    counter-increment: list;*/
+        /*    content: "[" counter(my-custom-counter) "]";*/
+        /*    position: absolute;*/
+        /*    left: -1.4em;*/
+        /*}*/
     </style>
 </head>
 
@@ -131,8 +131,8 @@
                 <li>[Oct. 2022] Our work on stock price prediction has been accepted for
                     <a href="https://bigdataieee.org/BigData2022/">BigData 2022</a>.
                 </li>
-<!--                <li>[Oct. 2022] We released a preprint on linear graph neural networks-->
-<!--                    [<a href="https://arxiv.org/abs/2210.04081">paper</a>].-->
+                <!--                <li>[Oct. 2022] We released a preprint on linear graph neural networks-->
+                <!--                    [<a href="https://arxiv.org/abs/2210.04081">paper</a>].-->
                 <li>[Aug. 2022] Our work on hypergraph reciprocity has been accepted for
                     <a href="https://icdm22.cse.usf.edu">ICDM 2022</a>.
                 </li>
@@ -299,8 +299,10 @@
         <div class="col">
             <h2 class="mt-4">Publications</h2>
             <hr>
-            <ol>
-                <li>
+
+            <h4 class="mb-3" style="color:gray">2023</h4>
+            <ul>
+                <li class="mb-2">
                     <b>Mining of Real-world Hypergraphs: Concepts, Patterns, and Generators</b><br>
                     Geon Lee, <u>Jaemin Yoo</u>, and Kijung Shin<br>
                     <a href="https://kdd.org/kdd2023/"><b>KDD 2023</b></a> and
@@ -308,48 +310,52 @@
                     <a href="https://sites.google.com/view/hypergraph-tutorial">slides and videos</a> |
                     <a href="https://dblp.uni-trier.de/rec/conf/www/FiondaHAACCC0DE23.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Less is More: SlimG for Accurate, Robust, and Interpretable Graph Mining</b><br>
                     <u>Jaemin Yoo</u>*, Meng-Chieh Lee*, Shubhranshu Shekhar, and Christos Faloutsos<br>
                     <a href="https://kdd.org/kdd2023/"><b>KDD 2023</b></a> [ to appear ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Classification of Edge-dependent Labels of Nodes in Hypergraphs</b><br>
                     Minyoung Choe, Sunwoo Kim, <u>Jaemin Yoo</u>, and Kijung Shin<br>
                     <a href="https://kdd.org/kdd2023/"><b>KDD 2023</b></a> [ to appear ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>How Transitive Are Real-World Group Interactions? - Measurement and Reproduction</b><br>
                     Sunwoo Kim, Fanchen Bu, Minyoung Choe, <u>Jaemin Yoo</u>, and Kijung Shin<br>
                     <a href="https://kdd.org/kdd2023/"><b>KDD 2023</b></a> [ to appear ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Towards Deep Attention in Graph Neural Networks: Problems and Remedies</b><br>
                     Soo Yong Lee, Fanchen Bu, <u>Jaemin Yoo</u>, and Kijung Shin<br>
                     <a href="https://icml.cc/Conferences/2023"><b>ICML 2023</b></a> [ to appear ]
                 </li>
-                <li>
+            </ul>
+
+            <h4 class="mb-3" style="color:gray">2022</h4>
+            <ul>
+                <li class="mb-2">
                     <b>UltraProp: Principled and Explainable Propagation on Large Graphs</b><br>
                     Meng-Chieh Lee, Shubhranshu Shekhar, <u>Jaemin Yoo</u>, and Christos Faloutsos<br>
                     <a href="https://arxiv.org/abs/2301.00270"><b>arXiv Preprint (2022)</b></a> [
                     <a href="https://arxiv.org/pdf/2301.00270.pdf">paper</a> |
                     <a href="https://dblp.uni-trier.de/rec/journals/corr/abs-2301-00270.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Self-supervision is not magic: Understanding Data Augmentation in Image Anomaly Detection</b><br>
                     <u>Jaemin Yoo</u>, Tiancheng Zhao, and Leman Akoglu<br>
                     <a href="https://arxiv.org/abs/2208.07734"><b>arXiv Preprint (2022)</b></a> [
                     <a href="https://arxiv.org/pdf/2208.07734.pdf">paper</a> |
                     <a href="https://dblp.uni-trier.de/rec/journals/corr/abs-2208-07734.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Accurate Stock Movement Prediction with Self-supervised Learning from Sparse Noisy Tweets</b><br>
-                    Yejun Soun*, <u>Jaemin Yoo</u>*, Minyong Cho, Jihyeong Jeon, and U Kang (*equal contribution)<br>
+                    Yejun Soun*, <u>Jaemin Yoo</u>*, Minyong Cho, Jihyeong Jeon, and U Kang<br>
                     <a href="https://bigdataieee.org/BigData2022/"><b>BigData 2022</b></a> [
                     <a href="resources/papers/SounYCJK22.pdf">paper</a> |
                     <a href="https://dblp.org/rec/conf/bigdataconf/SounYCJK22.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Mining of Real-world Hypergraphs: Concepts, Patterns, and Generators</b><br>
                     Geon Lee, <u>Jaemin Yoo</u>, and Kijung Shin<br>
                     <a href="https://arxiv.org/abs/2208.07734"><b>ICDM 2022</b></a> and
@@ -358,7 +364,7 @@
                     <a href="https://sites.google.com/view/hypergraph-tutorial">slides and videos</a> |
                     <a href="https://dblp.uni-trier.de/rec/conf/cikm/LeeYS22.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Reciprocity in Directed Hypergraphs: Measures, Findings, and Generators</b><br>
                     Sunwoo Kim, Minyoung Choe, <u>Jaemin Yoo</u>, and Kijung Shin<br>
                     <a href="https://icdm22.cse.usf.edu"><b>ICDM 2022</b></a> [
@@ -367,7 +373,7 @@
                     <a href="https://github.com/kswoo97/hyprec">code and datasets</a> |
                     <a href="https://dblp.org/rec/conf/icdm/KimCYS22.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Accurate Node Feature Estimation with Structured Variational Graph Autoencoder</b><br>
                     <u>Jaemin Yoo</u>, Hyunsik Jeon, Jinhong Jung, and U Kang<br>
                     <a href="https://kdd.org/kdd2022/cfnDissertation.html"><b>KDD 2022</b></a> [
@@ -379,10 +385,9 @@
                         blog (Korean)
                     </a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Graph-based PU Learning for Binary and Multiclass Classification without Class Prior</b><br>
-                    <u>Jaemin Yoo</u>*, Junghun Kim*, Hoyoung Yoon*, Geonsoo Kim, Changwon Jang, and U Kang
-                    (*equal contribution)<br>
+                    <u>Jaemin Yoo</u>*, Junghun Kim*, Hoyoung Yoon*, Geonsoo Kim, Changwon Jang, and U Kang<br>
                     <a href="https://link.springer.com/article/10.1007/s10115-022-01702-8"><b>
                         Knowledge and Information Systems (2022)
                     </b></a> [
@@ -392,7 +397,7 @@
                         blog (Korean)
                     </a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Signed Random Walk Diffusion for Effective Representation Learning in Signed Graphs</b><br>
                     Jinhong Jung, <u>Jaemin Yoo</u>, and U Kang<br>
                     <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265001"><b>
@@ -404,7 +409,7 @@
                         bib
                     </a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Model-Agnostic Augmentation for Accurate Graph Classification</b><br>
                     <u>Jaemin Yoo</u>, Sooyeon Shim, and U Kang<br>
                     <a href="https://www2022.thewebconf.org/"><b>TheWebConf 2022</b></a> [
@@ -416,7 +421,7 @@
                         blog (Korean)
                     </a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>MiDaS: Representative Sampling from Real-world Hypergraphs</b><br>
                     Minyoung Choe, <u>Jaemin Yoo</u>, Geon Lee, Woonsung Baek, U Kang, and Kijung Shin<br>
                     <a href="https://www2022.thewebconf.org/"><b>TheWebConf 2022</b></a> [
@@ -425,7 +430,7 @@
                     <a href="https://github.com/young917/MiDaS">code and datasets</a> |
                     <a href="https://dblp.uni-trier.de/rec/conf/www/ChoeYLBKS22.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Transition Matrix Representation of Trees with Transposed Convolutions</b><br>
                     <u>Jaemin Yoo</u> and Lee Sael<br>
                     <a href="https://www.siam.org/conferences/cm/conference/sdm22"><b>SDM 2022</b></a> [
@@ -434,10 +439,13 @@
                     <a href="https://github.com/leesael/TART">code and datasets</a> |
                     <a href="https://dblp.uni-trier.de/rec/journals/corr/abs-2202-10677.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+            </ul>
+
+            <h4 class="mb-3" style="color:gray">2021</h4>
+            <ul>
+                <li class="mb-2">
                     <b>Accurate Graph-Based PU Learning without Class Prior</b><br>
-                    <u>Jaemin Yoo</u>*, Junghun Kim*, Hoyoung Yoon*, Geonsoo Kim, Changwon Jang, and U Kang
-                    (*equal contribution)<br>
+                    <u>Jaemin Yoo</u>*, Junghun Kim*, Hoyoung Yoon*, Geonsoo Kim, Changwon Jang, and U Kang<br>
                     <a href="https://icdm2021.auckland.ac.nz/"><b>ICDM 2021</b></a> [
                     <a href="resources/papers/YooKYKJK21.pdf">paper</a> |
                     <a href="resources/slides/YooKYKJK21.pdf">slides</a> |
@@ -449,7 +457,7 @@
                         One of the best-ranked papers of ICDM 2021 for fast-track journal invitation
                     </span>
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Accurate Multivariate Stock Movement Prediction via Data-Axis Transformer with Multi-Level
                         Contexts</b><br>
                     <u>Jaemin Yoo</u>, Yejun Soun, Yong-chan Park, and U Kang<br>
@@ -459,7 +467,7 @@
                     <a href="http://datalab.snu.ac.kr/dtml">datasets</a> |
                     <a href="https://dblp.org/rec/conf/kdd/YooSPK21.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Gaussian Soft Decision Trees for Interpretable Feature-Based Classification</b>
                     <br><u>Jaemin Yoo</u> and Lee Sael
                     <br><a href="https://www.pakdd2021.org/"><b>PAKDD 2021</b></a>
@@ -468,7 +476,7 @@
                     | <a href="https://github.com/leesael/GSDT">code and datasets</a>
                     | <a href="https://dblp.org/rec/conf/pakdd/YooS21.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Attention-Based Autoregression for Accurate and Efficient Multivariate Time Series
                         Forecasting</b>
                     <br><u>Jaemin Yoo</u> and U Kang
@@ -479,7 +487,11 @@
                     | <a href="https://snudmlab.blogspot.com/2021/03/attention-based-autoregression-for.html">blog
                     (Korean)</a> ]
                 </li>
-                <li>
+            </ul>
+
+            <h4 class="mb-3" style="color:gray">2020</h4>
+            <ul>
+                <li class="mb-2">
                     <b>Sampling Subgraphs with Guaranteed Treewidth for Accurate and Efficient Graphical
                         Inference</b>
                     <br><u>Jaemin Yoo</u>, U Kang, Mauro Scanagatta, Giorgio Corani, and Marco Zaffalon
@@ -493,7 +505,11 @@
                     <br><span style="color:darkorange">Samsung HumanTech Paper Award; Qualcomm Innovation Fellowship
                             Korea</span>
                 </li>
-                <li>
+            </ul>
+
+            <h4 class="mb-3" style="color:gray">2019</h4>
+            <ul>
+                <li class="mb-2">
                     <b>Knowledge Extraction with No Observable Data</b>
                     <br><u>Jaemin Yoo</u>, Minyong Cho, Taebum Kim, and U Kang
                     <br><a href="https://nips.cc/Conferences/2019"><b>NeurIPS 2019</b></a>
@@ -508,7 +524,7 @@
                     ]
                     <br><span style="color:darkorange">Qualcomm Innovation Fellowship Korea</span>
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>EDiT: Interpreting Ensemble Models via Compact Soft Decision Trees</b>
                     <br><u>Jaemin Yoo</u> and Lee Sael
                     <br><a href="http://icdm2019.bigke.org/"><b>ICDM 2019</b></a>
@@ -517,7 +533,7 @@
                     | <a href="https://github.com/leesael/EDiT">code and datasets</a>
                     | <a href="https://dblp.org/rec/conf/icdm/YooS19.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Belief Propagation Network for Hard Inductive Semi-Supervised Learning</b>
                     <br><u>Jaemin Yoo</u>, Hyunsik Jeon, and U Kang
                     <br><a href="https://ijcai19.org/"><b>IJCAI 2019</b></a>
@@ -530,7 +546,11 @@
                     (Korean)</a>
                     ]
                 </li>
-                <li>
+            </ul>
+
+            <h4 class="mb-3" style="color:gray">2018</h4>
+            <ul>
+                <li class="mb-2">
                     <b>Fast and Scalable Distributed Loopy Belief Propagation on Real-World Graphs</b>
                     <br>Saehan Jo, <u>Jaemin Yoo</u>, and U Kang
                     <br><a href="http://www.wsdm-conference.org/2018/"><b>WSDM 2018</b></a>
@@ -540,7 +560,7 @@
                     | <a href="http://datalab.snu.ac.kr/dlbp">code and datasets</a>
                     | <a href="https://dblp.org/rec/conf/wsdm/JoYK18.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+                <li class="mb-2">
                     <b>Efficient Learning of Bounded-Treewidth Bayesian Networks from Complete and Incomplete Data
                         Sets</b>
                     <br>Mauro Scanagatta, Giorgio Corani, Marco Zaffalon, <u>Jaemin Yoo</u>, and U Kang
@@ -549,7 +569,11 @@
                     [ <a href="https://dl.acm.org/citation.cfm?id=3199356">paper</a>
                     | <a href="https://dblp.org/rec/journals/ijar/ScanagattaCZYK18.html?view=bibtex">bib</a> ]
                 </li>
-                <li>
+            </ul>
+
+            <h4 class="mb-3" style="color:gray">2017</h4>
+            <ul>
+                <li class="mb-2">
                     <b>Supervised Belief Propagation: Scalable Supervised Inference on Attributed Networks</b>
                     <br><u>Jaemin Yoo</u>, Saehan Jo, and U Kang
                     <br><a href="http://icdm2017.bigke.org/"><b>ICDM 2017</b></a>
@@ -561,7 +585,7 @@
                     (Korean)</a>
                     ]
                 </li>
-            </ol>
+            </ul>
             <!--            <ul>-->
             <!--                <li>-->
             <!--                    <b>Probabilistic Approaches for Node and Graph Classification</b>-->
